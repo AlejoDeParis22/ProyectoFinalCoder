@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@media only screen and (max-width: 850px) {
+  nav {
+    margin-left: 30vw;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .lista {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navegable {
+    width: 50%;
+    font-size: 0.7em;
+    justify-content: space-between;
+  }
+
+  .video {
+    display: none;
+  }
+
+  .lista li {
+    margin-left: 5px;
+  }
+
+  .lista a {
+    border: none;
+  }
+
+  #informacion, .titulo, .grid {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .pie-ppal {
+    background-color: #000000;
+  }
+  .pie-ppal .text {
+    display: none;
+  }
+
+  #categorias {
+    display: none;
+  }
+
+  #nosotros p, #nosotros h3, #pedidos h3, #pedidos p {
+    width: 100vw;
+  }
+
+  #mobile {
+    display: flex;
+    background-color: #9fa9adad;
+    margin: 0% 5%;
+  }
+  #mobile a {
+    margin-left: 1%;
+    font-size: 1.1em;
+    color: black;
+  }
+}
+@media only screen and (min-width: 851px) {
+  #mobile {
+    display: none;
+  }
+
+  .video {
+    width: 15vw;
+    margin-left: 35%;
+  }
+
+  /*Footer pagina principal*/
+  .principal .pie-ppal {
+    color: #fff;
+    font-size: var(--mainLetra);
+    background-color: rgba(0, 0, 0, 0.842);
+    display: flex;
+    padding-left: 1em;
+  }
+  .principal .pie-ppal .footer {
+    width: 65%;
+    display: flex;
+  }
+  .principal .pie-ppal .footer .redes a {
+    color: white;
+    margin-right: 5em;
+  }
+
+  /*Fin footer pagina principal*/
+}
+/*Nav pagina principal*/
+.principal .inicio {
+  background-color: rgba(255, 255, 255, 0.651);
+  display: inline-block;
+  top: 0px;
+  width: 90%;
+  margin-left: 5%;
+}
+.principal .inicio:hover {
+  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.568));
+}
+.principal .inicio h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 0.25em;
+}
+.principal .inicio .centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 0px;
+}
+.principal .inicio .navegable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 0px;
+}
+.principal .inicio .navegable .lista {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-family: "Dancing Script", cursive;
+  font-size: map-get base, mainLetra;
+}
+.principal .inicio .navegable .lista li {
+  display: flex;
+  margin-left: 1em;
+}
+.principal .inicio .navegable .lista a {
+  color: black;
+  border: 1.5px black solid;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+.principal .inicio .navegable .lista a:hover {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+.principal .inicio #logo {
+  width: 25%;
+}
+
+/*Fin nav pagina principal*/
+/*Nav paginas secundarias*/
+.cabecera {
+  background-color: black;
+}
+.cabecera h1 {
+  text-align: center;
+  padding-top: 0.5em;
+  color: #999;
+}
+.cabecera nav {
+  margin-left: 0px;
+}
+.cabecera .listasec {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+  margin-left: 1%;
+}
+.cabecera .listasec li {
+  margin-right: 10%;
+  list-style: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.cabecera .listasec li:hover {
+  background-color: #858585;
+}
+.cabecera .listasec a {
+  color: gray;
+}
+.cabecera .listasec a:hover {
+  color: black;
+}
+
+/*Fin nav pagina secundaria*/
+/*Footer pagina secundaria*/
+.secundario .footers {
+  background-color: #000000;
+}
+.secundario .footers p {
+  color: #999;
+}
+
+/*Fin footer pagina secundaria*/
+.principal .grid .cuadros, .principal .grid .arquitectura, .principal .grid .famosos, .principal .grid .lapiz {
+  background-color: rgba(0, 0, 0, 0.664);
+  color: white;
+  font-family: "Caveat", cursive;
+}
+
+.principal {
+  background-image: url(../imagenes/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1.1em;
+}
+.principal #pedidos {
+  padding-top: 1%;
+}
+.principal #pedidos p {
+  font-family: "Caveat", cursive;
+  font-size: 1.1em;
+  width: 40%;
+  display: inline-block;
+  margin-left: 30%;
+}
+.principal #pedidos h2 {
+  font-size: 1.5em;
+  width: 40%;
+  margin-left: 40%;
+}
+.principal #nosotros {
+  padding-top: 2%;
+}
+.principal #nosotros p {
+  font-family: "Caveat", cursive;
+  font-size: 1.1em;
+  width: 50%;
+  margin-left: 40%;
+}
+.principal #nosotros h2 {
+  width: 50%;
+  margin-left: 40%;
+  font-size: 1.5em;
+}
+.principal .titulo {
+  background-color: #9fa9adad;
+  font-size: 1.5em;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.principal .titulo:hover {
+  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.568));
+}
+.principal .grid {
+  width: 90%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  grid-template-areas: "lapiz vacio2 arquitectura vacio4" "vacio1 famosos vacio3 cuadros";
+}
+.principal .grid h3 {
+  font-size: 1.5em;
+}
+.principal .grid .lapiz {
+  grid-area: lapiz;
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.principal .grid .lapiz:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.principal .grid .famosos {
+  grid-area: famosos;
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.principal .grid .famosos:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.principal .grid .arquitectura {
+  grid-area: arquitectura;
+  grid-column: 3/4;
+  grid-row: 1;
+}
+.principal .grid .arquitectura:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.principal .grid .cuadros {
+  grid-area: cuadros;
+  grid-column: 4/5;
+  grid-row: 2;
+}
+.principal .grid .cuadros:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.principal .grid p {
+  text-align: center;
+  background-color: #9fa9adad;
+  width: 100%;
+}
+.principal .grid a {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 1.1em;
+}
+.principal .grid img {
+  width: 100%;
+}
+.principal #informacion {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  background-color: #9fa9adad;
+  padding-bottom: 10px;
+}
+.principal #informacion #contacto {
+  padding: 5%;
+}
+.principal #informacion #contacto h3 {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 2%;
+}
+.principal #informacion #contacto input, .principal #informacion #contacto textarea {
+  background-color: rgba(173, 173, 173, 0.664);
+  border: black;
+}
+
+/*Estilos paginas secundarias*/
+.secundario {
+  background-image: url(../imagenes/pruebafondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 0px;
+}
+.secundario .central {
+  background-color: #9fa9adad;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+}
+.secundario .central .slider {
+  width: 50%;
+}
+.secundario .central .texto {
+  width: 45%;
+  padding-top: 2%;
+}
+.secundario .galeria {
+  margin-top: 1.5em;
+  margin-left: 5%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.secundario .galeria img {
+  width: 100%;
+}
+.secundario .galeria img:hover {
+  transform: scale(1.5);
+}
+
+/*# sourceMappingURL=style.css.map */

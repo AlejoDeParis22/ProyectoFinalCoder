@@ -1,0 +1,187 @@
+@import "medidasQuery";
+@import "navegadores";
+@import "footers";
+@import "maps";
+@import "extends";
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+.principal{
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: map-get($map: $basico, $key: tamaño-ppal);
+    
+
+    #pedidos{
+        padding-top: 1%;
+        p{
+            font-family: 'Caveat', cursive;
+            font-size: map-get($map: $basico, $key: tamaño-ppal);
+            width: 40%;
+            display: inline-block;
+            margin-left: 30%;
+        }
+        h2{
+            font-size:  map-get($map: $basico, $key: tamaño-sub);
+            width: 40%;
+            margin-left: 40%;
+        }
+    }
+    #nosotros{
+        padding-top: 2%;
+        p{
+            font-family: 'Caveat', cursive;
+            font-size:  map-get($map: $basico, $key: tamaño-ppal);
+            width: 50%;
+            margin-left: 40%;
+        }
+        h2{
+            width: 50%;
+            margin-left: 40%;
+            font-size: map-get($map: $basico, $key: tamaño-sub);
+        }
+    }
+    .titulo{
+        background-color: map-get($map: $basico, $key: color-ppal);
+        font-size: map-get($map: $basico, $key: tamaño-sub);
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        &:hover{
+            background: linear-gradient(to bottom, rgb(255, 255, 255) , rgba(255, 255, 255, 0.568) );
+        }
+    }
+    .grid{
+        width: 90%;
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:1fr 1fr ;
+        gap: 5px;
+        grid-template-areas: "lapiz vacio2 arquitectura vacio4"
+        "vacio1 famosos vacio3 cuadros";
+        h3{
+            font-size: map-get($map: $basico, $key: tamaño-sub );
+        }
+        .lapiz{
+            grid-area: lapiz;
+            grid-column: 1/2;
+            grid-row: 1;
+            @extend %tarjetas;
+            &:hover{
+                transform: scale(1.1);
+                @include tiempo (0.5s);
+            }
+        }
+        .famosos{
+            grid-area: famosos;
+            grid-column: 2/3;
+            grid-row: 2;
+            @extend %tarjetas;
+            &:hover{
+                transform: scale(1.1);
+                @include tiempo (0.5s);
+            }
+        }
+        .arquitectura{
+            grid-area: arquitectura;
+            grid-column: 3/4;
+            grid-row: 1;
+            @extend %tarjetas;
+            &:hover{
+                transform: scale(1.1);
+                @include tiempo (0.5s);
+            }
+        }
+        .cuadros{
+            grid-area: cuadros;
+            grid-column: 4/5;
+            grid-row: 2;
+            @extend %tarjetas;
+            &:hover{
+                transform: scale(1.1);
+                @include tiempo (0.5s);
+            }
+        }
+        p{
+            text-align: center;
+            background-color: map-get($map: $basico, $key: color-ppal);
+            width: 100%;
+        }
+        a{
+            color:black;
+            font-family: 'Caveat', cursive;
+            font-size:  map-get($map: $basico, $key: tamaño-ppal);
+        }
+        img{
+            width: 100%;
+        }
+    }
+    #informacion{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        background-color: map-get($map: $basico, $key: color-ppal);
+        padding-bottom: 10px;
+        #contacto{
+            padding: 5%;
+            h3{
+                text-align: center;
+                font-size:  map-get($map: $basico, $key: tamaño-sub);
+                padding-top: 2%;
+            }
+            input, textarea{
+                background-color: rgba(173, 173, 173, 0.664);
+                border:black;
+            }
+
+        }
+    }
+}
+
+/*Estilos paginas secundarias*/
+
+.secundario{
+    background-image: url(../imagenes/pruebafondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 0px;
+
+   
+    .central{
+        background-color: map-get($map: $basico, $key: color-ppal);
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        .slider{
+            width: 50%;
+        }
+        .texto{
+            width: 45%;
+            padding-top: 2%;
+        }   
+    }
+    .galeria{
+        margin-top: 1.5em;
+        margin-left: 5%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap:10px;
+        img{
+            width: 100%;
+            &:hover{
+                transform:scale(1.5);
+            }
+        }
+    }
+}

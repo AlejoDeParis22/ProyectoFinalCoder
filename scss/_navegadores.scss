@@ -1,0 +1,93 @@
+/*Nav pagina principal*/
+.principal{
+    .inicio{
+        background-color: rgba(255, 255, 255, 0.651);
+        display: inline-block;
+        top:0px;
+        width: 90%;
+        margin-left: 5%;
+        &:hover{
+            background: linear-gradient(to bottom, rgb(255, 255, 255) , rgba(255, 255, 255, 0.568) );
+        } 
+        h1{
+            text-align: center;
+        font-family: 'Dancing Script', cursive;
+        padding-bottom: 0.25em;
+        }
+        .centro{
+            display:flex;
+        justify-content: center; 
+        align-items: center;  
+        padding: 0.3em 0px;
+        }
+        .navegable{
+            display:flex;
+            justify-content: center; 
+            align-items: center;  
+            padding: 0.3em 0px;
+            .lista{
+                display:flex;
+                justify-content:space-between;
+                color:black;
+                font-family: 'Dancing Script', cursive;
+                font-size: map-get (base, mainLetra);
+            li{
+                display:flex;
+                margin-left: 1em;
+            }
+            a{
+                color:black;
+                border: 1.5px black solid;
+                border-radius: 5px;
+                padding:2px 5px;
+                &:hover{
+                    background-color: rgb(27, 27, 27);
+                    color:#fff;
+                }
+            }
+            }
+        }
+        #logo{
+            width: 25%;
+        }
+    }
+}
+/*Fin nav pagina principal*/
+
+
+/*Nav paginas secundarias*/
+
+.cabecera{
+    background-color: black;
+    h1{
+        text-align: center;
+        padding-top: 0.5em;
+        color:#999
+    }
+    nav{
+        margin-left: 0px;
+    }
+    .listasec{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.5em;
+        margin-left: 1%;
+        li{
+            margin-right: 10%;
+            list-style:none;
+            border: 1px solid gray;
+            border-radius: 5px;
+            &:hover{
+                background-color: rgb(133, 133, 133);
+            }
+        }
+        a{
+            color: gray;
+            &:hover{
+                color:black;
+            }
+        }
+    }
+}
+
+/*Fin nav pagina secundaria*/
