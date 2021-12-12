@@ -18,32 +18,39 @@
 
     #pedidos{
         padding-top: 1%;
-        p{
-            font-family: 'Caveat', cursive;
-            font-size: map-get($map: $basico, $key: tamaño-ppal);
-            width: 40%;
-            display: inline-block;
-            margin-left: 30%;
-        }
+        font-family: 'Caveat', cursive;
+        font-size: map-get($map: $basico, $key: tamaño-ppal);
+
+
         h2{
             font-size:  map-get($map: $basico, $key: tamaño-sub);
             width: 40%;
-            margin-left: 40%;
+            margin-left: 30%;
         }
     }
+
     #nosotros{
         padding-top: 2%;
-        p{
-            font-family: 'Caveat', cursive;
-            font-size:  map-get($map: $basico, $key: tamaño-ppal);
-            width: 50%;
-            margin-left: 40%;
-        }
         h2{
-            width: 50%;
-            margin-left: 40%;
-            font-size: map-get($map: $basico, $key: tamaño-sub);
+            font-size:  map-get($map: $basico, $key: tamaño-sub);
+            width: 40%;
+            margin-left: 30%;
+            font-family: 'Caveat', cursive;
         }
+        .contenido{
+            display: block;
+        }
+        .NosotrosVideo{
+            width: 90%;
+            margin-left: 5%;
+        }
+        .NosotrosTexto{
+            font-family: 'Caveat', cursive;
+            font-size: map-get($map: $basico, $key: tamaño-ppal);
+        }
+        }
+
+
     }
     .titulo{
         background-color: map-get($map: $basico, $key: color-ppal);
@@ -144,7 +151,7 @@
 
         }
     }
-}
+
 
 /*Estilos paginas secundarias*/
 

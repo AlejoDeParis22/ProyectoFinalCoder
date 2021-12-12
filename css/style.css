@@ -48,8 +48,24 @@
     display: none;
   }
 
-  #nosotros p, #nosotros h3, #pedidos h3, #pedidos p {
-    width: 100vw;
+  .PedidosContenido {
+    display: block;
+  }
+  .PedidosContenido .PedidosTex p {
+    width: 90%;
+  }
+  .PedidosContenido .PedidosVideo {
+    width: 30%;
+    margin-left: 20%;
+  }
+
+  .NosotrosVideo {
+    width: 100%;
+  }
+
+  .NosotrosTexto {
+    width: 90%;
+    padding-left: 1em;
   }
 
   #mobile {
@@ -58,19 +74,18 @@
     margin: 0% 5%;
   }
   #mobile a {
-    margin-left: 1%;
     font-size: 1.1em;
+    font-family: "Caveat", cursive;
     color: black;
+    margin-left: 1.5em;
+    padding: 5px;
+    background-color: rgba(93, 93, 93, 0.623);
+    border-radius: 5px;
   }
 }
 @media only screen and (min-width: 851px) {
   #mobile {
     display: none;
-  }
-
-  .video {
-    width: 15vw;
-    margin-left: 35%;
   }
 
   /*Footer pagina principal*/
@@ -88,6 +103,30 @@
   .principal .pie-ppal .footer .redes a {
     color: white;
     margin-right: 5em;
+  }
+  .principal .PedidosContenido {
+    display: flex;
+  }
+  .principal .PedidosContenido .PedidosTex {
+    font-family: "Caveat", cursive;
+    font-size: 1.1em;
+    width: 49%;
+    margin-left: 10%;
+  }
+  .principal .PedidosContenido .PedidosVideo {
+    width: 30%;
+    margin-right: 1em;
+  }
+  .principal .NosotrosVideo {
+    width: 49%;
+  }
+  .principal .NosotrosTexto {
+    width: 49%;
+    padding-left: 1em;
+  }
+  .principal .NosotrosTexto p {
+    font-family: "Caveat", cursive;
+    font-size: 1.1em;
   }
 
   /*Fin footer pagina principal*/
@@ -190,7 +229,7 @@
 }
 
 /*Fin footer pagina secundaria*/
-.principal .grid .cuadros, .principal .grid .arquitectura, .principal .grid .famosos, .principal .grid .lapiz {
+.grid .cuadros, .grid .arquitectura, .grid .famosos, .grid .lapiz {
   background-color: rgba(0, 0, 0, 0.664);
   color: white;
   font-family: "Caveat", cursive;
@@ -205,34 +244,36 @@
 }
 .principal #pedidos {
   padding-top: 1%;
-}
-.principal #pedidos p {
   font-family: "Caveat", cursive;
   font-size: 1.1em;
-  width: 40%;
-  display: inline-block;
-  margin-left: 30%;
 }
 .principal #pedidos h2 {
   font-size: 1.5em;
   width: 40%;
-  margin-left: 40%;
+  margin-left: 30%;
 }
 .principal #nosotros {
   padding-top: 2%;
 }
-.principal #nosotros p {
+.principal #nosotros h2 {
+  font-size: 1.5em;
+  width: 40%;
+  margin-left: 30%;
+  font-family: "Caveat", cursive;
+}
+.principal #nosotros .contenido {
+  display: block;
+}
+.principal #nosotros .NosotrosVideo {
+  width: 90%;
+  margin-left: 5%;
+}
+.principal #nosotros .NosotrosTexto {
   font-family: "Caveat", cursive;
   font-size: 1.1em;
-  width: 50%;
-  margin-left: 40%;
 }
-.principal #nosotros h2 {
-  width: 50%;
-  margin-left: 40%;
-  font-size: 1.5em;
-}
-.principal .titulo {
+
+.titulo {
   background-color: #9fa9adad;
   font-size: 1.5em;
   font-family: "Caveat", cursive;
@@ -242,10 +283,11 @@
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
-.principal .titulo:hover {
+.titulo:hover {
   background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.568));
 }
-.principal .grid {
+
+.grid {
   width: 90%;
   margin-left: 5%;
   display: grid;
@@ -254,74 +296,75 @@
   gap: 5px;
   grid-template-areas: "lapiz vacio2 arquitectura vacio4" "vacio1 famosos vacio3 cuadros";
 }
-.principal .grid h3 {
+.grid h3 {
   font-size: 1.5em;
 }
-.principal .grid .lapiz {
+.grid .lapiz {
   grid-area: lapiz;
   grid-column: 1/2;
   grid-row: 1;
 }
-.principal .grid .lapiz:hover {
+.grid .lapiz:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.principal .grid .famosos {
+.grid .famosos {
   grid-area: famosos;
   grid-column: 2/3;
   grid-row: 2;
 }
-.principal .grid .famosos:hover {
+.grid .famosos:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.principal .grid .arquitectura {
+.grid .arquitectura {
   grid-area: arquitectura;
   grid-column: 3/4;
   grid-row: 1;
 }
-.principal .grid .arquitectura:hover {
+.grid .arquitectura:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.principal .grid .cuadros {
+.grid .cuadros {
   grid-area: cuadros;
   grid-column: 4/5;
   grid-row: 2;
 }
-.principal .grid .cuadros:hover {
+.grid .cuadros:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.principal .grid p {
+.grid p {
   text-align: center;
   background-color: #9fa9adad;
   width: 100%;
 }
-.principal .grid a {
+.grid a {
   color: black;
   font-family: "Caveat", cursive;
   font-size: 1.1em;
 }
-.principal .grid img {
+.grid img {
   width: 100%;
 }
-.principal #informacion {
+
+#informacion {
   width: 90%;
   margin-left: 5%;
   margin-bottom: 2%;
   background-color: #9fa9adad;
   padding-bottom: 10px;
 }
-.principal #informacion #contacto {
+#informacion #contacto {
   padding: 5%;
 }
-.principal #informacion #contacto h3 {
+#informacion #contacto h3 {
   text-align: center;
   font-size: 1.5em;
   padding-top: 2%;
 }
-.principal #informacion #contacto input, .principal #informacion #contacto textarea {
+#informacion #contacto input, #informacion #contacto textarea {
   background-color: rgba(173, 173, 173, 0.664);
   border: black;
 }
