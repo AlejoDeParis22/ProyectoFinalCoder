@@ -53,6 +53,7 @@
   }
   .PedidosContenido .PedidosTex p {
     width: 90%;
+    font-family: "Caveat", cursive;
   }
   .PedidosContenido .PedidosVideo {
     width: 30%;
@@ -60,7 +61,7 @@
   }
 
   .NosotrosVideo {
-    width: 100%;
+    width: 100;
   }
 
   .NosotrosTexto {
@@ -116,6 +117,9 @@
   .principal .PedidosContenido .PedidosVideo {
     width: 30%;
     margin-right: 1em;
+  }
+  .principal .contenido {
+    display: flex;
   }
   .principal .NosotrosVideo {
     width: 49%;
@@ -244,29 +248,18 @@
 }
 .principal #pedidos {
   padding-top: 1%;
-  font-family: "Caveat", cursive;
   font-size: 1.1em;
 }
 .principal #pedidos h2 {
   font-size: 1.5em;
-  width: 40%;
-  margin-left: 30%;
+  text-align: center;
 }
 .principal #nosotros {
   padding-top: 2%;
 }
 .principal #nosotros h2 {
   font-size: 1.5em;
-  width: 40%;
-  margin-left: 30%;
-  font-family: "Caveat", cursive;
-}
-.principal #nosotros .contenido {
-  display: block;
-}
-.principal #nosotros .NosotrosVideo {
-  width: 90%;
-  margin-left: 5%;
+  text-align: center;
 }
 .principal #nosotros .NosotrosTexto {
   font-family: "Caveat", cursive;

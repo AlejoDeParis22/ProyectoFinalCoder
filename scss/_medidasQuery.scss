@@ -45,6 +45,7 @@
         .PedidosTex{
             p{
                 width: 90%;
+                font-family: 'Caveat', cursive;
             }
         }
         .PedidosVideo{
@@ -54,7 +55,7 @@
     }
 
     .NosotrosVideo{
-        width: 100%;
+        width: 100;
     }
     .NosotrosTexto{
         width: 90%;
@@ -113,6 +114,9 @@
                 width: 30%;
                 margin-right: 1em;
             }
+        }
+        .contenido{
+            display: flex;
         }
         .NosotrosVideo{
             width: 49%;

@@ -18,14 +18,13 @@
 
     #pedidos{
         padding-top: 1%;
-        font-family: 'Caveat', cursive;
+
         font-size: map-get($map: $basico, $key: tamaño-ppal);
 
 
         h2{
             font-size:  map-get($map: $basico, $key: tamaño-sub);
-            width: 40%;
-            margin-left: 30%;
+            text-align: center;
         }
     }
 
@@ -33,16 +32,8 @@
         padding-top: 2%;
         h2{
             font-size:  map-get($map: $basico, $key: tamaño-sub);
-            width: 40%;
-            margin-left: 30%;
-            font-family: 'Caveat', cursive;
-        }
-        .contenido{
-            display: block;
-        }
-        .NosotrosVideo{
-            width: 90%;
-            margin-left: 5%;
+            text-align: center;
+            
         }
         .NosotrosTexto{
             font-family: 'Caveat', cursive;
