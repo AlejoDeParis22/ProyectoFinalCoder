@@ -56,9 +56,7 @@
     font-family: "Caveat", cursive;
   }
   .PedidosContenido .PedidosVideo {
-    width: 30%;
-    display: flex;
-    justify-content: start;
+    margin-left: -100px;
   }
 
   .NosotrosVideo {
@@ -70,12 +68,12 @@
     padding-left: 1em;
   }
 
-  .mobile {
+  #mobile {
     display: flex;
     background-color: #9fa9adad;
-    margin: 0px 5%;
+    margin: 0% 5%;
   }
-  .mobile a {
+  #mobile a {
     font-size: 1.1em;
     font-family: "Caveat", cursive;
     color: black;
@@ -86,7 +84,7 @@
   }
 }
 @media only screen and (min-width: 851px) {
-  .mobile {
+  #mobile {
     display: none;
   }
 
@@ -400,4 +398,4 @@
   transform: scale(1.5);
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */

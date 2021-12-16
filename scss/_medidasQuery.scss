@@ -50,7 +50,9 @@
         }
         .PedidosVideo{
             width: 30%;
-            margin-left: 20%;
+            display: flex;
+            justify-content: start;
+
         }
     }
 
@@ -62,12 +64,12 @@
         padding-left: 1em;
     }
 
-    #mobile{
+    .mobile{
         display: flex;
         background-color: map-get($map: $basico, $key: color-ppal);
-        margin: 0% 5%;
+        margin: 0px 5%;
         a{
-
+            
             font-size: map-get($map: $basico, $key:tamaño-ppal );
             font-family: 'Caveat', cursive;
             color:black;
