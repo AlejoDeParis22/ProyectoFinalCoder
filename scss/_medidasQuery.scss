@@ -1,4 +1,5 @@
 @import "maps";
+/*Mobile*/
 @media only screen and (max-width:850px){
     nav{
         margin-left: 30vw;
@@ -80,9 +81,11 @@
         }
     }
 }
+/*Fin mobile*/
 
+/*Desktop*/
 @media only screen and (min-width:851px){
-    #mobile{
+    .mobile{
         display: none;
     }
     /*Footer pagina principal*/
@@ -132,5 +135,5 @@
             }
         }
     }
-    /*Fin footer pagina principal*/
 }
+/*Fin desktop*/

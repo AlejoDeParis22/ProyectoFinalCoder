@@ -1,3 +1,4 @@
+/*Mobile*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @media only screen and (max-width: 850px) {
@@ -85,6 +86,8 @@
     border-radius: 5px;
   }
 }
+/*Fin mobile*/
+/*Desktop*/
 @media only screen and (min-width: 851px) {
   .mobile {
     display: none;
@@ -133,9 +136,8 @@
     font-family: "Caveat", cursive;
     font-size: 1.1em;
   }
-
-  /*Fin footer pagina principal*/
 }
+/*Fin desktop*/
 /*Nav pagina principal*/
 .principal .inicio {
   background-color: rgba(255, 255, 255, 0.651);
@@ -231,6 +233,10 @@
 }
 .secundario .footers p {
   color: #999;
+}
+.secundario .footers .redes a {
+  color: #999;
+  margin-left: 10%;
 }
 
 /*Fin footer pagina secundaria*/
