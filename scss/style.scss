@@ -139,8 +139,14 @@
                 background-color: rgba(173, 173, 173, 0.664);
                 border:black;
             }
-
         }
+        .NosotrosTexto{
+            a{
+                color:black;
+            }
+        }
+
+        
     }
 
 
@@ -165,6 +171,9 @@
         .texto{
             width: 45%;
             padding-top: 2%;
+            a{
+                color:black;
+            }
         }   
     }
     .galeria{
